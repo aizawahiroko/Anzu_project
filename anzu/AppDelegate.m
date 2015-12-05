@@ -16,7 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //初期設定
+    NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:@"" forKey:@"KEY_PATIENCE_ID"];
+    
+    [ud registerDefaults:defaults];
+    
     return YES;
 }
 

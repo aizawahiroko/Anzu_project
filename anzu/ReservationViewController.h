@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ReservationViewController.h
 //  anzu
 //
 //  Created by zawahiro on 2015/11/05.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ReservationViewController : UIViewController
 
 @end
-

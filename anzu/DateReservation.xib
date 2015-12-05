@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateReservation">
+            <connections>
+                <outlet property="view" destination="Ehi-EF-R0d" id="m5a-XD-v5f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ehi-EF-R0d">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOT-gA-dnq">
+                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                    <color key="barTintColor" red="0.085929681709999997" green="0.12031301849999999" blue="0.2717840608" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="予約日選択" id="aHf-Lw-ma2">
+                            <barButtonItem key="leftBarButtonItem" title="閉じる" id="d9n-rc-Q72">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="closeCalender:" destination="-1" id="8hj-YG-LnR"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎週" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-VA-aSm">
+                    <rect key="frame" x="49" y="110" width="34" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509803921567" green="0.12156862745098039" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-p8-hz9">
+                    <rect key="frame" x="105" y="158" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="X5d-Yi-qvc"/>
+                        <constraint firstAttribute="width" constant="55" id="goC-o4-scw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQC-mZ-GgK">
+                    <rect key="frame" x="105" y="200" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="anM-dL-IG6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="火曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbf-7S-WH2">
+                    <rect key="frame" x="105" y="242" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ctd-jy-rQu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STw-Fs-XOW">
+                    <rect key="frame" x="105" y="284" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BHi-vg-dWg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJr-rR-U7q">
+                    <rect key="frame" x="105" y="326" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xhl-wO-N1m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-Du-cG5">
+                    <rect key="frame" x="105" y="368" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N5b-HT-dF2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="土曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-it-gH9">
+                    <rect key="frame" x="105" y="410" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bTw-6f-7si"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSW-Fl-9Zc">
+                    <rect key="frame" x="78" y="157" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="DLo-mx-vCK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOP-e8-8uD">
+                    <rect key="frame" x="78" y="199" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="dZG-ae-Mgf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-Kh-x4r">
+                    <rect key="frame" x="78" y="241" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="9Fj-6a-Qhi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-hG-gbB">
+                    <rect key="frame" x="78" y="284" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="Jk4-vP-Bn4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ye-a1-FzY">
+                    <rect key="frame" x="78" y="326" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="nJj-gp-BIc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHc-ic-5pv">
+                    <rect key="frame" x="78" y="368" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="GH4-VX-x0z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Eh-vD-pzZ">
+                    <rect key="frame" x="78" y="410" width="21" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="unChecked"/>
+                    <state key="selected" image="check"/>
+                    <connections>
+                        <action selector="selectWeekday:" destination="-1" eventType="touchUpInside" id="cW4-Sj-bMm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="top" secondItem="cyU-p8-hz9" secondAttribute="bottom" constant="21" id="2N5-na-hIQ"/>
+                <constraint firstItem="Rbf-7S-WH2" firstAttribute="top" secondItem="iQC-mZ-GgK" secondAttribute="bottom" constant="21" id="3Mw-PW-x4f"/>
+                <constraint firstItem="gJr-rR-U7q" firstAttribute="top" secondItem="STw-Fs-XOW" secondAttribute="bottom" constant="21" id="58S-9Z-ixc"/>
+                <constraint firstItem="cyU-p8-hz9" firstAttribute="top" secondItem="NOT-gA-dnq" secondAttribute="bottom" constant="94" id="5Jn-pQ-JdY"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="top" secondItem="gJr-rR-U7q" secondAttribute="bottom" constant="20" id="BQT-po-2eI"/>
+                <constraint firstItem="cyU-p8-hz9" firstAttribute="leading" secondItem="Ehi-EF-R0d" secondAttribute="leading" constant="105" id="C04-to-oWM"/>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="top" secondItem="Ehi-EF-R0d" secondAttribute="top" constant="201" id="Cnr-Fe-YiO"/>
+                <constraint firstItem="cyU-p8-hz9" firstAttribute="top" secondItem="qNL-VA-aSm" secondAttribute="bottom" constant="28" id="Dvh-yz-CAg"/>
+                <constraint firstItem="cyU-p8-hz9" firstAttribute="leading" secondItem="Ehi-EF-R0d" secondAttribute="leading" constant="118" id="Gbm-bN-mKW"/>
+                <constraint firstItem="8fD-it-gH9" firstAttribute="top" secondItem="FZI-Du-cG5" secondAttribute="bottom" constant="21" id="HSY-kl-g85"/>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="trailing" secondItem="Rbf-7S-WH2" secondAttribute="trailing" id="JOt-iP-Gq8"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="trailing" secondItem="STw-Fs-XOW" secondAttribute="trailing" id="LpI-Hc-LIc"/>
+                <constraint firstAttribute="bottom" secondItem="FZI-Du-cG5" secondAttribute="bottom" constant="210" id="Pn3-4e-Gbf"/>
+                <constraint firstItem="qNL-VA-aSm" firstAttribute="top" secondItem="NOT-gA-dnq" secondAttribute="bottom" constant="46" id="QUZ-aq-zIv"/>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="leading" secondItem="Rbf-7S-WH2" secondAttribute="leading" id="Rs5-lF-ltN"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="leading" secondItem="STw-Fs-XOW" secondAttribute="leading" id="U7A-RF-wi3"/>
+                <constraint firstItem="STw-Fs-XOW" firstAttribute="top" secondItem="Rbf-7S-WH2" secondAttribute="bottom" constant="21" id="VZS-Qs-esh"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="leading" secondItem="8fD-it-gH9" secondAttribute="leading" id="XfS-mt-jPU"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="leading" secondItem="Rbf-7S-WH2" secondAttribute="leading" id="aGZ-jy-nLv"/>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="trailing" secondItem="cyU-p8-hz9" secondAttribute="trailing" id="clX-M6-NBZ"/>
+                <constraint firstItem="NOT-gA-dnq" firstAttribute="leading" secondItem="Ehi-EF-R0d" secondAttribute="leading" id="dzu-cE-QYe"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="trailing" secondItem="Rbf-7S-WH2" secondAttribute="trailing" id="e46-ez-g88"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="top" secondItem="gJr-rR-U7q" secondAttribute="bottom" constant="21" id="fZN-na-T3E"/>
+                <constraint firstItem="NOT-gA-dnq" firstAttribute="top" secondItem="Ehi-EF-R0d" secondAttribute="top" constant="20" id="gkI-dc-Frj"/>
+                <constraint firstItem="cyU-p8-hz9" firstAttribute="top" secondItem="Ehi-EF-R0d" secondAttribute="top" constant="160" id="jRu-Oo-cGF"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="trailing" secondItem="gJr-rR-U7q" secondAttribute="trailing" id="kJG-hi-5dE"/>
+                <constraint firstItem="qNL-VA-aSm" firstAttribute="leading" secondItem="Ehi-EF-R0d" secondAttribute="leading" constant="49" id="qBO-ys-6ZM"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="trailing" secondItem="8fD-it-gH9" secondAttribute="trailing" id="qae-d6-YXM"/>
+                <constraint firstItem="iQC-mZ-GgK" firstAttribute="leading" secondItem="cyU-p8-hz9" secondAttribute="leading" id="ruO-ge-NRw"/>
+                <constraint firstAttribute="trailing" secondItem="NOT-gA-dnq" secondAttribute="trailing" id="uae-yS-Wnx"/>
+                <constraint firstItem="FZI-Du-cG5" firstAttribute="leading" secondItem="gJr-rR-U7q" secondAttribute="leading" id="yjC-VB-8ke"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Gbm-bN-mKW"/>
+                    <exclude reference="jRu-Oo-cGF"/>
+                    <exclude reference="Cnr-Fe-YiO"/>
+                    <exclude reference="BQT-po-2eI"/>
+                    <exclude reference="Pn3-4e-Gbf"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="203" y="372"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check" width="21" height="21"/>
+        <image name="unChecked" width="21" height="21"/>
+    </resources>
+</document>
