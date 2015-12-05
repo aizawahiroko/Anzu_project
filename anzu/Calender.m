@@ -290,7 +290,6 @@
             table = [[UITableView alloc]initWithFrame:CGRectMake(0, tableY, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - tableY - 44) style:UITableViewStylePlain];
             table.dataSource = self;
             table.delegate = self;
-            
             [self.view addSubview:table];
         }
         
